@@ -72,7 +72,6 @@ body {
 .warningBox {
   align-self: flex-end;
   align-content: center;
-  position: absolute;
 
   color: hsl(229, 57%, 11%);
   text-align: center;
@@ -160,4 +159,108 @@ body {
   padding: 0.5rem;
   margin-left: 25.5rem;
   margin-top: -0.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    background-image: url("./assets/mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 0rem;
+  }
+
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
+  }
+
+  .innerDot {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 1rem;
+    padding: 0.5rem;
+    margin-left: 13.5rem;
+    margin-top: -0.5rem;
+  }
+
+  .box1 {
+    width: 30%;
+    margin-right: -1rem;
+  }
+
+  .box2 {
+    width: 30%;
+    height: 10rem;
+    margin-top: 4rem;
+    margin-left: 1%;
+  }
+
+  .warningBox {
+    align-content: center;
+    position: absolute;
+    margin-top: 8rem;
+    margin-right: 5rem;
+  }
+
+  .warningBox:after {
+    content: none;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .wrapper {
+    background-image: url("./assets/mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 0rem;
+  }
+
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
+  }
+
+  .innerDot {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 1rem;
+    padding: 0.5rem;
+    margin-left: 13.5rem;
+    margin-top: -0.5rem;
+  }
+
+  .box1 {
+    width: 30%;
+    margin-right: -1rem;
+  }
+
+  .box2 {
+    width: 30%;
+    height: 10rem;
+    margin-top: 4rem;
+    margin-left: 1%;
+  }
+
+  .warningBox {
+    align-content: center;
+    position: absolute;
+    margin-top: 8rem;
+    margin-right: 5rem;
+  }
+
+  .warningBox:after {
+    content: none;
+  }
 }
